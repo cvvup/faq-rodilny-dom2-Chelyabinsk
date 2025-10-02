@@ -69,6 +69,7 @@
         max-width: 900px;
         margin: 0 auto;
       }
+
       .faq-card {
         background: white;
         border-radius: 12px;
@@ -78,9 +79,11 @@
         transition: box-shadow 0.3s ease;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
       }
+
       .faq-card:hover {
         box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
       }
+
       .faq-question {
         padding: 18px;
         font-weight: 600;
@@ -89,17 +92,20 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        font-size: 25px;
+        font-size: 18px; /* базовый размер для десктопа */
       }
+
       .faq-question::after {
         content: "＋";
         font-size: 18px;
         transition: transform 0.3s ease;
       }
+
       .faq-card.active .faq-question::after {
         content: "－";
         transform: rotate(180deg);
       }
+
       .faq-answer {
         max-height: 0;
         overflow: hidden;
@@ -107,9 +113,29 @@
         padding: 0 18px;
         line-height: 1.6;
       }
+
       .faq-card.active .faq-answer {
         max-height: 1300px;
         padding: 18px;
+      }
+
+      /* Media queries для разных экранов */
+      @media (max-width: 1024px) {
+        .faq-question {
+          font-size: 22px;
+        }
+      }
+
+      @media (max-width: 768px) {
+        .faq-question {
+          font-size: 21px;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .faq-question {
+          font-size: 20px;
+        }
       }
 
       /* карточки палат */
