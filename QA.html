@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Часто задаваемые вопросы — Роддом ОКБ №2 Челябинск</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background: #f9f9f9;
+        color: #333;
+      }
+      header {
+        background: #0077cc;
+        color: white;
+        padding: 20px;
+        text-align: center;
+        font-size: 22px;
+        font-weight: bold;
+      }
+      .search-box {
+        padding: 15px;
+        text-align: center;
+      }
+      .search-box input {
+        width: 60%;
+        padding: 10px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+      }
+      .faq-container {
+        width: 80%;
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 10px;
+      }
+      .faq-card {
+        background: white;
+        border-radius: 8px;
+        margin: 10px 0;
+        border: 1px solid #ddd;
+        overflow: hidden;
+        transition: all 0.3s ease;
+      }
+      .faq-question {
+        padding: 15px;
+        font-weight: bold;
+        cursor: pointer;
+        background: #f1f1f1;
+      }
+      .faq-answer {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+        padding: 0 15px;
+      }
+      .faq-card.active .faq-answer {
+        max-height: 500px;
+        padding: 15px;
+      }
+      footer {
+        margin-top: 30px;
+        background: #eee;
+        padding: 20px;
+        text-align: center;
+        font-size: 14px;
+        line-height: 1.6;
+      }
+      footer a {
+        color: #0077cc;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <header>Часто задаваемые вопросы — Роддом ОКБ №2, Челябинск</header>
+
+    <div class="search-box">
+      <input type="text" id="search" placeholder="Поиск по вопросам..." />
+    </div>
+
+    <div class="faq-container" id="faq">
+      <div class="faq-card">
+        <div class="faq-question">Часы передач</div>
+        <div class="faq-answer">
+          Время приема передач: ежедневно 11:00 - 13:00 и 17:00 - 18:50.<br />
+          Передачи передаются в столе справок (Гагарина, д.18, к.2, вход №2).<br />
+          Все продукты и вещи сложены в пакет и подписаны для кого.
+        </div>
+      </div>
+
+      <div class="faq-card">
+        <div class="faq-question">
+          Время и правила посещения в коммерческих палатах
+        </div>
+        <div class="faq-answer">
+          Посещения разрешены по одному человеку, старше 18 лет.<br />
+          Часы посещения: 17:00 - 18:50 (ПН-ВС).<br />
+          Не забудьте взять сменную обувь и маску.
+        </div>
+      </div>
+
+      <div class="faq-card">
+        <div class="faq-question">
+          Стоимость и правила оплаты коммерческих палат
+        </div>
+        <div class="faq-answer">
+          Платные палаты есть в дородовом и послеродовом отделении.<br />
+          Оплата в день выписки за количество проведённых суток.<br />
+          Все способы оплаты доступны.
+        </div>
+      </div>
+
+      <div class="faq-card">
+        <div class="faq-question">Оснащение коммерческих палат</div>
+        <div class="faq-answer">
+          Холодильник, чайник, микроволновка, телевизор, стол, свой санузел (душ
+          и туалет).
+        </div>
+      </div>
+
+      <div class="faq-card">
+        <div class="faq-question">Список разрешённых продуктов</div>
+        <div class="faq-answer">
+          (Сюда можно вставить фото или список продуктов)
+        </div>
+      </div>
+
+      <div class="faq-card">
+        <div class="faq-question">Сопровождение партнёром на родах</div>
+        <div class="faq-answer">
+          При КС возможно партнёрское сопровождение.<br />
+          Предварительная запись не нужна.<br />
+          Партнёру нужны сменная обувь и одежда, результаты ФОГ (≤6 мес) и ВИЧ
+          (в день родов).<br />
+          Подробнее:
+          <a href="https://t.me/rody_v_dvoyke/17" target="_blank">читать</a>
+        </div>
+      </div>
+
+      <div class="faq-card">
+        <div class="faq-question">Сроки подписывания книжек</div>
+        <div class="faq-answer">
+          Подписание книжек с 32 недели беременности.<br />
+          Ранее можно обратиться в «Линию заботы»:
+          <a href="https://t.me/rody_v_dvoyke/15" target="_blank">ссылка</a>
+        </div>
+      </div>
+
+      <div class="faq-card">
+        <div class="faq-question">Онлайн регистрация и госпитализация</div>
+        <div class="faq-answer">
+          Госпитализация: будни с 08:00 до 14:00.<br />
+          Вход №1 (приёмный покой).<br />
+          При себе: паспорт, полис, снилс, диспансерная книжка, при браке —
+          копии паспортов и свидетельства о браке.
+        </div>
+      </div>
+
+      <div class="faq-card">
+        <div class="faq-question">Количество пациенток в палатах</div>
+        <div class="faq-answer">
+          Семейная — мама, ребёнок и родственник.<br />
+          Одноместная — мама и ребёнок, возможны гости.<br />
+          Двухместная — 2 мамы и 2 ребёнка.<br />
+          Общая — до 4 мам с детьми.
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p>г. Челябинск, ул. Гагарина, д.18, корп.2</p>
+      <p>
+        По вопросам звоните: 8 (351) 217-70-42 (доб. 3019), будни 11:00–15:00
+      </p>
+      <p>
+        <a href="https://vk.com/rdokb?from=groups" target="_blank">ВКонтакте</a>
+        | <a href="https://t.me/rody_v_dvoyke" target="_blank">Telegram</a> |
+        <a href="https://forms.gle/ZdRZxawEBd5auFZV7" target="_blank"
+          >Запись на роды</a
+        >
+        |
+        <a href="https://forms.gle/9bXBdsLbvbPzFmG58" target="_blank"
+          >Экскурсии</a
+        >
+        |
+        <a href="https://t.me/rody_v_dvoyke/15" target="_blank">Линия заботы</a>
+        |
+        <a href="https://t.me/chat_beremennykh" target="_blank"
+          >Форум беременных</a
+        >
+      </p>
+    </footer>
+
+    <script>
+      // Аккордеон
+      document.querySelectorAll(".faq-question").forEach((q) => {
+        q.addEventListener("click", () => {
+          q.parentElement.classList.toggle("active");
+        });
+      });
+
+      // Поиск
+      document.getElementById("search").addEventListener("input", function () {
+        let filter = this.value.toLowerCase();
+        document.querySelectorAll(".faq-card").forEach((card) => {
+          let text = card.innerText.toLowerCase();
+          card.style.display = text.includes(filter) ? "" : "none";
+        });
+      });
+    </script>
+  </body>
+</html>
